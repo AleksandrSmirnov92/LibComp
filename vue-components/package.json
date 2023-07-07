@@ -1,0 +1,32 @@
+{
+  "name": "vuecomp",
+  "version": "0.0.0",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/vue-comp.umd.cjs",
+  "module": "./dist/vue-comp.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/vue-comp.es.js",
+      "require": "./dist/vue-comp.umd.cjs"
+    },
+    "./styles.css": "./dist/style.css"
+  },
+  "browser": {
+    "./styles.css": "./dist/style.css"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "vue": "^3.3.4"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.2.3",
+    "vite": "^4.4.0"
+  }
+}
